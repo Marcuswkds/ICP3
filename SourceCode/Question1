@@ -7,8 +7,8 @@ class Employee:  # Create class Employee.
         self.family = family
         self.salary = salary
         self.department = department
-        Employee.noOfEmployee += 1
-        Employee.salaries += salary
+        Employee.noOfEmployee += 1  # Adds employee count.
+        Employee.salaries += salary  # Combines the two salary total.
 
     @staticmethod
     def getaveragesalary():  # Static method to get the average salary for employees.
@@ -20,6 +20,6 @@ class FullTimeEmployee(Employee):  # Create class FullTimeEmployee.
         Employee.__init__(self, name, family, salary, department)
 
 
-foo = Employee("john", "doe", 1000, "hr")  # Initiating Employee variable
-bar = FullTimeEmployee("alice", "smith", 2000, "it")  # Initiating FullTimeEmployee variable
+foo = Employee("John", "Doe", 2500, "HR")  # Initiating Employee variable
+bar = FullTimeEmployee("Alice", "Smith", 5000, "IT")  # Initiating FullTimeEmployee variable
 Employee.getaveragesalary()  # Calling the function.
