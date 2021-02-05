@@ -1,0 +1,22 @@
+import numpy  # Importing the numpy
+
+arr_size = 20  # Setting the array size
+randArray = numpy.empty(arr_size)  # Creating random array.
+
+i = 0
+while i < 20:
+    randPosFloat = numpy.random.rand()
+    while randPosFloat < 1:  # Rand() results in positive numbers less than 1 so moving decimal points to achieve numbers in acceptable range
+        randPosFloat *= 10
+    randArray[i] = randPosFloat
+    i += 1
+
+print(randArray)
+
+twoDimArray = numpy.reshape(randArray, (4, 5))  # Reshape to size 4 x 5 array.
+print(twoDimArray)
+
+maxZeroArray = numpy.copy(twoDimArray)
+maxZeroArray[numpy.arange(len(twoDimArray)), twoDimArray.argmax(1)] = 0  # Replacing the max values of the array with 0.
+
+print(maxZeroArray)
