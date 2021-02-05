@@ -47,3 +47,4 @@ bar.print_family()
 bar.print_salary()
 bar.print_department()
 print("")
+
