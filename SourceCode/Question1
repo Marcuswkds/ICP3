@@ -10,6 +10,18 @@ class Employee:  # Create class Employee.
         Employee.noOfEmployee += 1  # Adds employee count.
         Employee.salaries += salary  # Combines the two salary total.
 
+    def print_name(self):
+        print(self.name)
+
+    def print_family(self):
+        print(self.family)
+
+    def print_salary(self):
+        print(self.salary)
+
+    def print_department(self):
+        print(self.department)
+
     @staticmethod
     def getaveragesalary():  # Static method to get the average salary for employees.
         print("Average salary: ${}".format(Employee.salaries/Employee.noOfEmployee))  # Outputs average salary of the employees.
@@ -23,3 +35,15 @@ class FullTimeEmployee(Employee):  # Create class FullTimeEmployee.
 foo = Employee("John", "Doe", 2500, "HR")  # Initiating Employee variable
 bar = FullTimeEmployee("Alice", "Smith", 5000, "IT")  # Initiating FullTimeEmployee variable
 Employee.getaveragesalary()  # Calling the function.
+
+  # To call and print the member functions for each class.
+foo.print_name()
+foo.print_family()
+foo.print_salary()
+foo.print_department()
+print("")
+bar .print_name()
+bar.print_family()
+bar.print_salary()
+bar.print_department()
+print("")
