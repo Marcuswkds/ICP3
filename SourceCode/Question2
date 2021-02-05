@@ -1,0 +1,20 @@
+import requests
+from lxml import html
+
+url = "https://en.wikipedia.org/wiki/Deep_learning"  # Specifiying the webpage that we are using.
+content = requests.get(url).content
+elem = html.fromstring(content)
+
+title = elem.xpath("//title/text()")[0] 
+print(title)
+
+anchorElems = elem.xpath("//a")
+f = open("wikiLinks.txt", "w")  # Opening an input file to write into.
+
+for anchorElem in anchorElems:
+    attr = anchorElem.attrib.get('href')
+    if attr is not None:
+        f.write(attr + "\n")  # Appending our links with a newline.
+        print(attr)
+
+f.close()  # Closing the input file.
