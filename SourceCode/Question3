@@ -11,12 +11,14 @@ while i < 20:
     randArray[i] = randPosFloat
     i += 1
 
-print(randArray)
+print(randArray)  # Outputs the random array with size 20
+print("\n")
 
 twoDimArray = numpy.reshape(randArray, (4, 5))  # Reshape to size 4 x 5 array.
-print(twoDimArray)
+print(twoDimArray)  # Outputs the reshaped array.
+print("\n")
 
 maxZeroArray = numpy.copy(twoDimArray)
 maxZeroArray[numpy.arange(len(twoDimArray)), twoDimArray.argmax(1)] = 0  # Replacing the max values of the array with 0.
-
-print(maxZeroArray)
+print(maxZeroArray)  # Outputs the reshaped array with the max values replaced with 0.
+print("\n")
