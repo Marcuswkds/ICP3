@@ -1,0 +1,25 @@
+class Employee:  # Create class Employee.
+    noOfEmployee = 0  # Starting number of employees.
+    salaries = 0
+
+    def __init__(self, name, family, salary, department):  # Constructor to initiate name, family, salary, department.
+        self.name = name
+        self.family = family
+        self.salary = salary
+        self.department = department
+        Employee.noOfEmployee += 1
+        Employee.salaries += salary
+
+    @staticmethod
+    def getaveragesalary():  # Static method to get the average salary for employees.
+        print("Average salary: ${}".format(Employee.salaries/Employee.noOfEmployee))  # Outputs average salary of the employees.
+
+
+class FullTimeEmployee(Employee):  # Create class FullTimeEmployee.
+    def __init__(self, name, family, salary, department):
+        Employee.__init__(self, name, family, salary, department)
+
+
+foo = Employee("john", "doe", 1000, "hr")  # Initiating Employee variable
+bar = FullTimeEmployee("alice", "smith", 2000, "it")  # Initiating FullTimeEmployee variable
+Employee.getaveragesalary()  # Calling the function.
