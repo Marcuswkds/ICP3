@@ -22,3 +22,4 @@ maxZeroArray = numpy.copy(twoDimArray)
 maxZeroArray[numpy.arange(len(twoDimArray)), twoDimArray.argmax(1)] = 0  # Replacing the max values of the array with 0.
 print(maxZeroArray)  # Outputs the reshaped array with the max values replaced with 0.
 print("\n")
+
