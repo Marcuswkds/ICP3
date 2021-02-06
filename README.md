@@ -37,8 +37,7 @@ I started by creating an vector of size 20 that has random floats that have a va
 
 ![image](https://user-images.githubusercontent.com/72952948/107108656-30eb9900-67ff-11eb-83de-903ae9145f75.png)
 
-
-
+Video Link: https://umkc.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=48814b39-b5bf-45fd-a0d6-acc700463aeb
 
 
 
