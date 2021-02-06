@@ -23,4 +23,9 @@ I started by creating a class 'Employee' and a class 'Fulltime Employee' that in
 
 ![image](https://user-images.githubusercontent.com/72952948/107093396-c6206a80-67ca-11eb-8fdb-720adf012c43.png)
 
-I started by importing the libraries and used the request.get url to obtain data from the specific wiki page.Then, I opened a text file named 'wikilinks.txt' to append the information and print the title of the page. I also used elem.xpath to navigate through the elements and obtain the 'href' elements as strings. I then print all the links to the output text file named 'wikilinks.txt
+I started by importing the libraries and used the request.get url to obtain data from the specific wiki page.Then, I opened a text file named 'wikilinks.txt' to append the information and print the title of the page. I also used elem.xpath to navigate through the elements and obtain the 'href' elements as strings. I then print all the links to the output text file named 'wikilinks.txt'
+
+![image](https://user-images.githubusercontent.com/72952948/107108360-e406c300-67fc-11eb-95a6-83183b1ca0fe.png)
+
+
+
